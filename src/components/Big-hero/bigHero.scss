@@ -1,0 +1,218 @@
+.bigHero-container{
+    display: flex;
+    // width: 100vw;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+
+    .hero-text{
+        .hero-text-header{
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 62px;
+            line-height: 70px;
+            /* or 113% */
+            
+            letter-spacing: 0.02em;
+            
+            /* Primary Color/100 */
+            color: #004C3F;
+            margin-bottom: 40px;
+            
+            
+        }
+        
+        .text{
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+            
+            
+            /* Black color/300 */
+            
+            color: #57605E;
+            margin-bottom: 40px;
+
+        }
+        .hero-buttons{
+            
+            .admin-btn{
+                margin-right: 50px;
+                width: 192px;
+                height: 64px;
+                background: #004C3F;
+                h1{
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    /* identical to box height, or 133% */
+                    
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    
+                    /* tertiary color/200 */
+                    
+                    color: #FFDB95;
+                }
+            }
+            .shop-demo{
+                width: 181px;
+                height: 64px;
+                border: 1px solid #004C3F;
+                background-color: transparent;
+                h1{
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    /* identical to box height, or 133% */
+                    
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    
+                    /* Primary Color/100 */
+                    
+                    color: #004C3F;
+                }
+
+            }
+        }
+    }
+}
+
+.sub-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 60px;
+    h2{
+        font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Primary Color/100 */
+
+color: #004C3F;
+    }
+    h1{
+        font-weight: 500;
+font-size: 50px;
+line-height: 64px;
+/* or 128% */
+
+text-align: center;
+letter-spacing: 0.02em;
+
+/* Primary Color/100 */
+
+color: #004C3F;
+    }
+    h3{
+        font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+text-align: center;
+
+/* Black color/400 */
+
+color: #82918F;
+    }
+    
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 120px;
+        .card-stack-one{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            
+        }
+        .card-stack-two{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .card{
+            width: 370px;
+            height: 227px;
+            border: 1px solid #004C3F;
+            background-color: white;
+
+            .light-orange{
+                background: #FFBC9F;
+            }
+            .light-yellow{
+
+                background: #FFDB95;
+            }
+
+            .light-green{
+                background: #9DEDC6;
+
+            }
+
+            .card-header-row{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 10px;
+                border-bottom: 1px solid #004C3F;
+
+                
+                h1{
+
+                    font-style: normal;
+                    font-weight: 500;
+                    font-family: 'DM Sans';
+                    font-size: 18px;
+                    line-height: 26px;
+                    /* identical to box height, or 144% */
+                    
+                    
+                    /* Black color/100 */
+                    
+                    color: #212625;
+                    text-align: left;
+                }
+
+            }
+
+            .card-body{
+                padding: 30px 20px;
+                height: auto;
+                h1{
+                    font-family: 'DM Sans';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-style: normal;
+                    text-align: left;
+                    /* or 162% */
+                    
+                    
+                    /* Black color/300 */
+                    
+                    color: #57605E;
+
+                }
+            }
+
+        }
+    }
+}
