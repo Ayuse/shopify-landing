@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Footer.scss';
 import arrow from '../../images/ArrowRight.svg';
 import guy from '../../images/guy.png';
 import sticky from '../../images/sticky.png';
 import logo from '../../images/Logos.png';
+import gsap from 'gsap';
 
 export default function Footer() {
   return (

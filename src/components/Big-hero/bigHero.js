@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './bigHero.scss';
 import card from '../../images/Card.png';
 import layout from '../../images/layout.svg';
@@ -7,16 +7,43 @@ import setting from '../../images/setting.svg';
 import purchase from '../../images/purchase.svg';
 import database from '../../images/database.svg';
 import refresh from '../../images/refresh.svg';
+import gsap from 'gsap';
 
-export default function bigHero() {
+export default function BigHero() {
+  const tl = gsap.timeline();
+
+  let line1 = useRef(null);
+  let line2 = useRef(null);
+  let line3 = useRef(null);
+
+  useEffect(() => {
+    tl.fromTo(
+      [line1, line2, line3],
+      {
+        y: 50,
+      },
+      {
+        y: 0,
+        duration: 1,
+        stagger: 0.1,
+      }
+    );
+  }, []);
+
   return (
     <div>
       <section className='bigHero-container'>
         <div className='hero-text'>
           <div className='hero-text-header'>
-            <h1>The platform</h1>
-            <h1>commerce is</h1>
-            <h1>built on.</h1>
+            <div className='hero-text-inner'>
+              <h1 ref={(el) => (line1 = el)}>The platform</h1>
+            </div>
+            <div className='hero-text-inner'>
+              <h1 ref={(el) => (line2 = el)}>commerce is</h1>
+            </div>
+            <div className='hero-text-inner'>
+              <h1 ref={(el) => (line3 = el)}>built on.</h1>
+            </div>
           </div>
           <div className='text'>
             Millions of the world's most successful brands <br /> trust Shopify
