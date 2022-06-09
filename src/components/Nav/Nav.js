@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from '../../images/Logo.svg';
 import './Nav.scss';
+import gsap from 'gsap';
 
 export default function Nav() {
+  useEffect(() => {
+    gsap.to('.nav-container', {
+      opacity: 1,
+      duration: 0.5,
+      ease: 'power3.in',
+      delay: 1,
+    });
+  }, []);
+
   return (
     <div className='nav-container'>
       <div className='logo-container'>

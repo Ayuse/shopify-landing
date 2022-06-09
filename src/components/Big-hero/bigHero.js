@@ -11,24 +11,40 @@ import gsap from 'gsap';
 
 export default function BigHero() {
   const tl = gsap.timeline();
-
+  let imgbig = useRef(null);
   let line1 = useRef(null);
   let line2 = useRef(null);
   let line3 = useRef(null);
 
   useEffect(() => {
-    tl.fromTo(
-      [line1, line2, line3],
-      {
-        y: 50,
-      },
-      {
+    tl.to(imgbig, {
+      x: 0,
+      duration: 1,
+      ease: 'power3.OutIn',
+    })
+      .to(
+        [line1, line2, line3],
+
+        {
+          y: 0,
+          duration: 1,
+          stagger: 0.1,
+        },
+        '+0.5'
+      )
+      .to('.text', {
         y: 0,
-        duration: 1,
-        stagger: 0.1,
-      }
-    );
+        duration: 0.6,
+        opacity: 1,
+      })
+      .to('.hero-buttons', {
+        y: 0,
+        duration: 0.6,
+        opacity: 1,
+      });
   }, []);
+
+  useEffect(() => {}, []);
 
   return (
     <div>
@@ -59,7 +75,7 @@ export default function BigHero() {
           </div>
         </div>
         <div className='hero-image-block'>
-          <img src={card} alt='' />
+          <img ref={(el) => (imgbig = el)} src={card} alt='' />
         </div>
       </section>
 
