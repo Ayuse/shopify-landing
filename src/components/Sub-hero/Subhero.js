@@ -7,7 +7,7 @@ import testimonial from '../../images/testimonial.png';
 
 export default function Subhero() {
   return (
-    <div className='subhero-container'>
+    <div className='subhero-container' data-scroll-section>
       <div className='wrapper'>
         <h1>
           Managing your ecommerce business <br /> on the go is easy.

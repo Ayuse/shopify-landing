@@ -48,7 +48,7 @@ export default function BigHero() {
 
   return (
     <div>
-      <section className='bigHero-container'>
+      <section className='bigHero-container' data-scroll-section>
         <div className='hero-text'>
           <div className='hero-text-header'>
             <div className='hero-text-inner'>
@@ -79,8 +79,8 @@ export default function BigHero() {
         </div>
       </section>
 
-      <section className='sub-control'>
-        <h2>360° CUSTOMIZABLE</h2>
+      <section className='sub-control' data-scroll-section>
+        <h2 className='sub-header-two'>360° CUSTOMIZABLE</h2>
         <h1 className='ful-control-header'>
           Have full control over <br />
           your online store

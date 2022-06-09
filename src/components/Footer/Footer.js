@@ -9,7 +9,7 @@ import gsap from 'gsap';
 export default function Footer() {
   return (
     <div className='footer-wrapper'>
-      <div className='footer-container'>
+      <div className='footer-container' data-scroll-section>
         <div className='footer-header'>
           <div className='header-text'>
             <h1>Read our blog</h1>
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <section className='last-footer'>
+      <section className='last-footer' data-scroll-section>
         <div className='header'>
           <h1>
             We can take care of the <br /> installation
